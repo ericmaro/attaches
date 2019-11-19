@@ -23,6 +23,7 @@ export default class Uploader {
   uploadSelectedFile({ onPreview }) {
     ajax.transport({
       url: this.config.endpoint,
+      headers:this.config.headers,
       accept: this.config.types,
       beforeSend: () => onPreview(),
       fieldName: this.config.field
