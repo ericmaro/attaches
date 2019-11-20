@@ -77,6 +77,7 @@ export default class AttachesTool {
 
     this.config = {
       endpoint: config.endpoint || '',
+      headers: config.headers || '',
       field: config.field || 'file',
       types: config.types || '*',
       buttonText: config.buttonText || 'Select file to upload',
